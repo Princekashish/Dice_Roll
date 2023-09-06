@@ -1,0 +1,67 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(rgb(255, 108, 108), #581916)0 100% no-repeat;
+    height: 100vh;
+    background-size: 100% 50%;
+    font-family: 'Inter', sans-serif;
+  }
+  .container {
+    width: 400px;
+    padding: 50px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 15px 45px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+.dic{
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+}
+p{
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+button{
+  margin-top: 1.5rem;
+  background-color: rgb(255, 0, 0);
+  border-radius: 9px;
+  color: rgb(255, 255, 255);
+  padding: 0.6rem;
+  letter-spacing: 0.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  
+}
+.shake{
+  animation: shake 0.5s infinite;
+}
+@keyframes shake{
+  0%{
+    transform: rotate(8deg);
+  }
+  50%{
+    transform: rotate(-8deg);
+  }
+  100%{
+    transform: rotate(8deg);
+  }
+  
+}
